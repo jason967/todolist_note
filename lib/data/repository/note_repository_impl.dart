@@ -9,7 +9,7 @@ class NoteRepositoryImpl implements NoteRepository {
   NoteRepositoryImpl(this.db);
 
   @override
-  Future<List<Note>> getNote() async {
+  Future<List<Note>> getNotes() async {
     return await db.getNotes();
   }
 
